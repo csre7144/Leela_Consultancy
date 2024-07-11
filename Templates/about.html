@@ -1,0 +1,174 @@
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Leela Consultancy About us</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'img/icons/logoicon.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative" style="width: 6rem; height: 6rem;" role="status"></div>
+        <img class="position-absolute top-50 start-50 translate-middle" src="{% static 'img/icons/logoicon3.jpg' %}" alt="">
+    </div> 
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="{% url 'home' %}" class="navbar-brand ms-4 ms-lg-0">
+            <img class="me-3" src="{% static 'img/icons/homelogo.jpg' %}" alt="">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="{% url 'home' %}" class="nav-item nav-link">Home</a>
+                <a href="{% url 'about' %}" class="nav-item nav-link active">About</a>
+                <a href="{% url 'career' %}" class="nav-item nav-link">Career</a>
+                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+            </div>
+            <!-- <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Appointment</a> -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+
+    <!-- Business Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <h4 class="section-title" style="font-size: 72px;">Businees!</h4>
+                    <p class="mb-4">In an increasingly competitive business environment, organizations need to make disparate software systems work together in a dynamic way in order to support new and innovative enterprise-level business processes. To date, making systems work together like this has proved to be expensive and time-consuming, with system integration activities often costing significantly more than standard application development. Importantly, traditional integration activities do not naturally support the definition and rapid assembly of innovative business processes in the way that many organizations would like to see.
+                        <br><br>
+                    In response, many organizations and technology providers are promoting a `service-oriented´ approach to integrating systems - both within and across enterprises. The approach seeks to fuse business semantics (definitions that describe the business in a consistent way) and Web services in a way that allows much more flexibility in the development of innovative, enterprise-level business processes. From a global perspective, the purpose is to provide standard definitions and ways of doing things that allows enterprises and parts of an enterprise to act independently but work together.
+                    <br><br>
+                    The top most concern for industries today is managing a growing volume of structured and unstructured data, avoiding process delays and data compliance issues. As the economic tide changes, opportunities prevail and organizations position themselves to capitalize on these opportunities. Business Intelligence solutions are expected to accelerate business growth by enabling faster, more accurate decisions. It is supposed to reduce products’ time-to-market. Organizations expect a culture of innovation through access to right information at the right time. You use business intelligence for various purposes but one prominent reason amongst them is a creation of new business models.
+                    <br><br>
+                    Leela Consultancy can help transform your processes, give a better perspective and add value to your business.
+                    <br><br>
+                    We offer end-to-end Business Integration services that include Business Integration Strategy, Information Quality Management, Data Warehousing, Master Data Management, and Analytics & Performance Management services. Our solutions have provided valuable insights and helped transform the business processes of several clients.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Business End -->
+<!-- Business group  -->
+    <div class="container-xxl py-2">
+        <div class="container">
+            <div class="row business-group">
+                <ul class="list-group ">
+                    <li class="list-group-item col-lg-4 col-md-6">Business Integration Strategy</li>
+                    <li class="list-group-item col-lg-4 col-md-6">Information Quality Management Services</li>
+                    <li class="list-group-item col-lg-4 col-md-6">Data Warehousing</li>
+                    <li class="list-group-item col-lg-4 col-md-6">Master Data Management</li>
+                    <li class="list-group-item col-lg-4 col-md-6">Analytics and Performance Management</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Business group  -->
+
+    <!-- Staffing -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <h4 class="section-title" style="font-size: 72px;">Staffing</h4>
+                    <h1>Leela Consultancy Healthcare Staffing</h1>
+                    <p class="mb-4">Leela Consultancy is a full-service staffing agency with a focus in the areas of healthcare staffing, sales recruitment, accounting and information technology. We work with industry-leading companies and experienced professionals to provide the best career opportunities and find that perfect match between job seeker and employer.
+                        <br><br>
+                    The success or failure of a company can hinge on its ability to acquire and retain key employees. When the need arises to search for talented professionals, Leela Consultancy provides solutions that fit, and surpass other staffing agencies. Our staffing agency intellectually partners with organizations so that we are able to understand how their healthcare recruiting and staffing needs tie into their business objectives. With that knowledge in hand, we identify premier candidates and provide crucial information in order to achieve recruitment and organizational success. We staff Registered Nurses, Exercise Physiologiests, Pharmacist etc.</p>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <!-- <h4 class="section-title" style="font-size: 72px;">Staffing</h4> -->
+                    <h1>Background</h1>
+                    <p class="mb-4">Leela Consultancy began as an answer to the major challenge in healthcare staffing and recruiting realized during the Covid19 pandemic: A clear market need for a high-quality, consultative, value-oriented approach to healthcare recruiting and staffing, delivered by a reliable staffing agency. We decided that our client base would be formed around companies that valued the relationships and quality aspects of recruiting, instead of the typical recruiting strategy of quantity first and quality second, seen with other staffing agencies. The mutual commitment between the recruiter and client was born and continues to be the foundation of Crawford Thomas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Staffing -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-4">
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-6">
+                    <h3 class="text-light mb-4">Address</h3>
+                    <p class="mb-2" style="color: white;"><i class="fa fa-map-marker-alt text-light me-3" style="color: white;"></i>Leela Consultancy, 1413 Stratford Ridge Lane Cary, NC - 27519 USA</p>
+                    <a href="callto:+1 919-655-9515"><p class="mb-2" style="color: white;"><i class="fa fa-phone-alt text-light me-3"></i>+1 919-655-9515</p></a>
+                    <a href="mailto:contact@leelaconsultancy.com"><p class="mb-2" style="color: white;"><i class="fa fa-envelope text-light me-3"></i>contact@leelaconsultancy.com</p></a>
+                </div>
+                <div class="col-lg-6 col-md-6 social-media">
+                    <h3 class="text-light mb-4">Quick Links</h3>
+                    <a class="btn btn-link" href="{% url 'home' %}">Home</a>
+                    <a class="btn btn-link" href="{% url 'about' %}">About Us</a>
+                    <a class="btn btn-link" href="{% url 'career' %}">Career</a>
+                    <a class="btn btn-link" href="{% url 'contact' %}">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class=" col-md-12 text-center text-light text-md-center mb-3 mb-md-0">
+                &copy; <a href="#"></a>2024 All Right Reserved By Leela Consultancy.
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/moment.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

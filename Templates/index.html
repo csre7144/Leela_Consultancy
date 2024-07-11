@@ -1,0 +1,477 @@
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Leela Consultancy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'img/icons/logoicon.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative" style="width: 6rem; height: 6rem;" role="status"></div>
+        <img class="position-absolute top-50 start-50 translate-middle" src="{% static 'img/icons/logoicon3.jpg' %}" alt="">
+    </div> 
+    <!-- Spinner End -->
+
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <img class="me-3" src="{% static 'img/icons/homelogo.jpg' %}" alt="">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
+                <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+                <a href="{% url 'career' %}" class="nav-item nav-link">Career</a>
+                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative" >
+                <img class="img-fluid" src="{% static 'img/icons/homebanner2.jpg' %}" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <!-- <div class="col-10 col-lg-8">
+                                <h1 class="display-1 text-white animated slideInDown">Best Architecture And Interior Design Services</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                                <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img class="img-fluid" src="{% static 'img/datascience.png' %}" alt="">
+                        <img class="img-fluid" src="{% static 'img/about.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn para" data-wow-delay="0.5s">
+                    <!-- <h4 class="section-title">About Us</h4> -->
+                    <h1 class="display-5 mb-4" style="color: #012e89; text-align: center;">About Us</h1>
+                    <p>Leela Consultancy is an energetic Global Sourcing and IT Services Company for businesses looking beyond mere cost saving. Over the many years, we have served number of small, medium & large enterprises, delivering high-value application development solutions to achieve their business goals.
+                        <br><br>
+                    Over the years while working on various business requirements & industry verticals, we have built our competencies and with our matured processes & global delivery model that helps us to give the best balance in terms of cost, agility and quality for building applications that meet business needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Sector Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h4 class="section-title">Sectors</h4>
+            </div>
+            <div class="row g-4">
+                <p>Leela Consultancy’s solutions have helped companies that operate within a variety of markets - and we understand the issues that drive them. Leela Consultancy’s services are offered on a project or strategic staffing basis, in both custom and Data Warehousing as well as Data Integration package environments, and across all technology platforms, operating systems and infrastructures. When your business partners with us, we bring to the table depth of experience and solid credentials in each of the vertical markets below.
+
+                Leela Consultancy recognizes that to deliver solutions that meet your organization's unique needs, technical proficiency alone just isn't enough. So we focus on a select range of industries, and we bring you not only tailored technology solutions, but deep industry expertise and our commitment to a long-term relationship that helps you achieve and sustain measurable results.</p>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="{% static 'img/healthcare.jpg' %}" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="{% static 'img/icons/lifeinsurance.png' %}" alt="">
+                            <h3 class="mb-3">Health Care</h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <!-- <a class="btn" href="">Read More</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="{% static 'img/retail.jpg' %}" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="{% static 'img/icons/retailstore.png' %}" alt="">
+                            <h3 class="mb-3">Retail</h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <!-- <a class="btn" href="">Read More</a>    -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="{% static 'img/finance.jpg' %}" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="{% static 'img/icons/financial.png' %}" alt="">
+                            <h3 class="mb-3">Financial</h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <!-- <a class="btn" href="">Read More</a>    -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="{% static 'img/banking.jpg' %}" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="{% static 'img/icons/onlinebanking.png' %}" alt="">
+                            <h3 class="mb-3">Banking</h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <!-- <a class="btn" href="">Read More</a>    -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="{% static 'img/manufacturing.jpg' %}" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="{% static 'img/icons/manufacturing.png' %}" alt="">
+                            <h3 class="mb-3">Manufacturing</h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <!-- <a class="btn" href="">Read More</a>    -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="{% static 'img/it.jpg' %}" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="{% static 'img/icons/IT.png' %}" alt="Icon">
+                            <h3 class="mb-3">IT</h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <!-- <a class="btn" href="">Read More</a>    -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="{% static 'img/insurance.jpg' %}" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="{% static 'img/icons/Insurance.png' %}" alt="">
+                            <h3 class="mb-3">Insurance
+                            </h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <!-- <a class="btn" href="">Read More</a>    -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="{% static 'img/consulting.jpg' %}" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="{% static 'img/icons/ConsultingServices.png' %}" alt="">
+                            <h3 class="mb-3">Consulting Services</h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <!-- <a class="btn" href="">Read More</a>    -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sector End -->
+
+    <!-- silder start -->
+    <div class="container-xxl py-5 side-group">
+        <div class="container">
+            <h4 class="sildegroup">Clients</h4>
+            <div class="silder">
+                <div class="silde-track">
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>PRA Health Sciences</p>
+                    </div>
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>PetroChoice Holdings, Inc.</p>
+                    </div>
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>Modern Woodmen of America</p>
+                    </div>
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>Cigna HealthSpring</p>
+                    </div>
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>Lennar Corporation </p>
+                    </div>
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>EMD Serono</p>
+                    </div>
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>Press Ganey Associates</p>
+                    </div>   
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>Bausch & Lomb</p>
+                    </div>
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>Valeant Pharmaceutical</p>
+                    </div>
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>Salix Pharmaceutical</p>
+                    </div>
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>Qualcomm</p>
+                    </div>  
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>Blue Cross & Blue Shield of Rhode Island</p>
+                    </div>
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>Service Corporation International</p>
+                    </div>  
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>Sharp Corporation</p>
+                    </div>
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>XL Insurance</p>
+                    </div>  
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>The Hartford Insurance</p>
+                    </div> 
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>American Family Insurance</p>
+                    </div>      
+                    <div class="silde">
+                        <!-- <img src="img/Leela/tableau.jpg" alt=""> -->
+                        <p>CVS Caremark</p>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- silder end -->
+
+
+    <!-- Technologies Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h4 class="section-title">Technologies</h4>
+                <!-- <h1 class="display-5 mb-4">We Are Creative Architecture Team For Your Dream Home</h1> -->
+            </div>
+            <div class="row g-0 team-items">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Leela/informatica.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Leela/oracle.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Leela/ssis.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Leela/teradata.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Leela/db2.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Leela/netezza.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Leela/cognos.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Leela/bo.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Leela/obiee.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Leela/tableau.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Leela/talend.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Leela/ssis.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Leela/jitterbit.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Leela/pentaho.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Leela/salesforce.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Leela/clover.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Technologies End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-4">
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-6">
+                    <h3 class="text-light mb-4">Address</h3>
+                    <p class="mb-2" style="color: white;"><i class="fa fa-map-marker-alt text-light me-3" style="color: white;"></i>Leela Consultancy, 1413 Stratford Ridge Lane Cary, NC - 27519 USA</p>
+                    <a href="callto:+1 919-655-9515"><p class="mb-2" style="color: white;"><i class="fa fa-phone-alt text-light me-3"></i>+1 919-655-9515</p></a>
+                    <a href="mailto:contact@leelaconsultancy.com"><p class="mb-2" style="color: white;"><i class="fa fa-envelope text-light me-3"></i>contact@leelaconsultancy.com</p></a>
+                </div>
+                <div class="col-lg-6 col-md-6 social-media">
+                    <h3 class="text-light mb-4">Quick Links</h3>
+                    <a class="btn btn-link" href="{% url 'home' %}">Home</a>
+                    <a class="btn btn-link" href="{% url 'about' %}">About Us</a>
+                    <a class="btn btn-link" href="{% url 'career' %}">Career</a>
+                    <a class="btn btn-link" href="{% url 'contact' %}">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class=" col-md-12 text-center text-light text-md-center mb-3 mb-md-0">
+                &copy; <a href="#"></a>2024 All Right Reserved By Leela Consultancy.
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-dark btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/moment.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
